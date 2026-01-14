@@ -1,0 +1,24 @@
+[project]
+name = "RAG-System-Foundation"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi"
+    "uvicorn"
+    "pydantic"
+    "pydantic-settings" 
+    "openai"
+    "sentence-transformers" 
+    "faiss-cpu"
+    "numpy"
+    "python-dotenv"
+    "requests"
+]
+
+[tool.black]
+line-length = 88
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
